@@ -67,6 +67,11 @@
        margin-bottom: 150px;
      }
 
+     p {
+       max-width: 400px;
+       margin: 0 auto;
+     }
+
      article h2 {
        padding: 30px 0;
        font-weight: 100;
@@ -131,20 +136,27 @@
      .clearfix { display: block; }
      /* close commented backslash hack */
 
-      @media (max-width: 768px) {
-        p {
-        max-width: 400px;
-        margin: 0 auto;
-        }
-      }
-
-     @media (min-widtH: 768px) {
+     @media (min-width: 768px) {
+       .labs-header {
+         margin: 0;
+       }
+       
+       .labs-summary {
+         padding-top: 30px;
+         width: 500px;
+         text-align: left;
+       }
+       
        .tools-heading, .tools-list  {
          text-align: left;
        }
      }
      
      @media (min-width: 768px) and (max-width: 990px) {
+       p {
+        max-width: 400px;
+        margin: 0 auto;
+       }
        header {
          background: url('images/flask-mediumish.png');
          background-repeat: no-repeat;
@@ -157,6 +169,10 @@
      }
 
      @media (min-width: 990px) {
+       p {
+         margin: 0;
+         max-width: 100%;
+       }
        header {
          background :none;
          padding-top: 30px;
